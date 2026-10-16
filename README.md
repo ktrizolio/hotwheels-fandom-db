@@ -93,8 +93,28 @@ As pastas `dados/`, `saida/` e `logs/` são criadas na primeira execução e nã
 - **[Documentação técnica](docs/DOCUMENTACAO_TECNICA.md):** download, classificação das páginas, parser das tabelas e regras de junção.
 - **[Histórico](docs/HISTORICO.md):** a versão antiga com Scrapy, os problemas dela e o que mudou.
 
-## Uso responsável e licença dos dados
+## Licença
 
-- O programa usa a API oficial, faz uma requisição por vez, respeita o `maxlag` e se identifica no `User-Agent`. **Rode no máximo algumas vezes por mês**: a wiki muda pouco de um dia para o outro.
-- O **conteúdo** (textos, dados e fotos) é da comunidade da Hot Wheels Wiki, publicado sob a licença **[CC BY-SA](https://www.fandom.com/licensing)**. Se você publicar os dados ou as fotos, cite a fonte (o campo `page_url` de cada registro já traz o link) e mantenha a mesma licença.
-- Hot Wheels é marca registrada da Mattel. Este projeto não tem ligação com a Mattel nem com a Fandom.
+© 2026 [ktrizolio](https://github.com/ktrizolio). Este projeto (código, documentação e a base gerada) está sob a licença **[Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br)**. O texto completo está em [`LICENSE`](LICENSE).
+
+Você pode **usar, copiar, modificar e redistribuir**, inclusive para fins comerciais, desde que:
+
+1. **Cite a fonte** (atribuição), como no modelo abaixo;
+2. **Compartilhe pela mesma licença** o que você publicar a partir daqui (CC BY-SA 4.0 ou compatível);
+3. Indique se fez alterações.
+
+**Modelo de citação:**
+
+> Dados: [Hot Wheels Wiki](https://hotwheels.fandom.com) (Fandom), colaboradores, CC BY-SA. Extraídos com [Hot Wheels Fandom DB](https://github.com/ktrizolio/hotwheels-fandom-db), CC BY-SA 4.0.
+
+Para um registro específico, o campo `page_url` aponta para a página de origem na wiki.
+
+### Fonte dos dados
+
+Todo o conteúdo da base (textos, dados e o endereço das fotos) vem da comunidade da **[Hot Wheels Wiki](https://hotwheels.fandom.com)**, publicada pela Fandom sob licença **[CC BY-SA](https://www.fandom.com/licensing)**. A base é uma obra derivada desse conteúdo e, por isso, segue a mesma licença. As fotos **não** são copiadas para este repositório: a base guarda apenas o link para o arquivo na própria wiki, e cada foto continua sob a licença indicada na sua página de arquivo.
+
+### Isenção de responsabilidade
+
+- O projeto é oferecido **"no estado em que se encontra"**, sem garantia de nenhum tipo, e os autores não se responsabilizam por danos decorrentes do uso (seções 5 e 6 da licença). Os dados vêm de uma wiki aberta e podem conter erros.
+- **Hot Wheels** é marca registrada da **Mattel, Inc.** Este é um projeto independente, sem ligação, patrocínio ou aprovação da Mattel ou da Fandom. Os nomes de marcas e modelos aparecem apenas para identificar os produtos.
+- Quem roda o programa é responsável por usá-lo de acordo com os [Termos de Uso da Fandom](https://www.fandom.com/terms-of-use): ele usa a API oficial, faz uma requisição por vez, respeita o `maxlag` e se identifica no `User-Agent`. **Rode no máximo algumas vezes por mês**; a wiki muda pouco de um dia para o outro.

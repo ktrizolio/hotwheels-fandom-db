@@ -124,4 +124,4 @@ O endereço da foto é calculado a partir do nome do arquivo citado na wiki. Se 
 Primeiro confira na página da wiki (`page_url`). Se o erro estiver lá, corrija na própria wiki: na próxima atualização ele some daqui também. Se a wiki estiver certa e a base errada, abra uma *issue* neste repositório com o `id` do registro.
 
 **Posso publicar os dados ou as fotos?**
-Sim, respeitando a licença **CC BY-SA** da Fandom: cite a Hot Wheels Wiki como fonte e mantenha a mesma licença.
+Sim, inclusive para fins comerciais, respeitando a licença **CC BY-SA**: cite a fonte (há um modelo de citação no [README](../README.md#licença)) e publique o que derivar daqui pela mesma licença.

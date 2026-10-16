@@ -172,5 +172,5 @@ Funções públicas e estáveis: `hw_parser.classify`, `parse_casting`, `parse_m
 - Trate `""` como desconhecido e não use para ordenar/filtrar ano sem checar.
 - Para validar `toy_#`: `^[A-Z0-9]{3,6}(-\d+)?$` por código (separe por " / "). Valores fora disso são erros herdados da wiki.
 - Imagens: `photo_url` aponta para o CDN da Fandom (`static.wikia.nocookie.net`). Faça cache local, mande um `User-Agent` e trate 404.
-- Atribuição: o conteúdo vem da Hot Wheels Wiki (Fandom), sob licença **CC BY-SA**. Se publicar os dados ou fotos, cite a fonte (`page_url`).
+- Atribuição: o conteúdo vem da Hot Wheels Wiki (Fandom), sob licença **CC BY-SA**, e esta base é distribuída sob **CC BY-SA 4.0**. Se publicar os dados ou fotos, cite a fonte (`page_url`) e use a mesma licença; veja o modelo de citação no [README](../README.md#licença).
 - Atualização: rode `ATUALIZAR_DB.bat` no máximo algumas vezes por mês. A wiki muda pouco por dia.
