@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "castings_v6.schema.json",
+  "title": "Modelo/casting (castings_v6.jsonl)",
+  "type": "object",
+  "required": [
+    "title",
+    "model_name",
+    "page_url",
+    "product_type",
+    "n_versions"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título da página (chave)"
+    },
+    "model_name": {
+      "type": "string",
+      "description": "Nome no infobox"
+    },
+    "designer": {
+      "type": "string",
+      "description": ""
+    },
+    "first_series": {
+      "type": "string",
+      "description": "1ª série"
+    },
+    "number": {
+      "type": "string",
+      "description": "Toy # do infobox"
+    },
+    "years": {
+      "type": "string",
+      "description": "Anos de produção (texto)"
+    },
+    "image_file": {
+      "type": "string",
+      "description": ""
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "product_type": {
+      "enum": [
+        "vehicle",
+        "monster_truck",
+        "trackset",
+        "pack"
+      ]
+    },
+    "n_versions": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

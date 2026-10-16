@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hotwheels_db_v6.release.schema.json",
+  "title": "Versão Hot Wheels (hotwheels_db_v6.jsonl, 1 objeto por linha)",
+  "type": "object",
+  "required": [
+    "id",
+    "model_name",
+    "release_year",
+    "series",
+    "col_#",
+    "toy_#",
+    "color",
+    "tampo",
+    "photo_url",
+    "page_url",
+    "casting",
+    "product_type",
+    "source",
+    "uid"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Chave pública: {ano}-{modelo}-{toy#}-{cor} (+ '~xxxxxx' em variações com o mesmo id base)"
+    },
+    "model_name": {
+      "type": "string",
+      "description": "Nome do modelo nesta versão"
+    },
+    "release_year": {
+      "type": "string",
+      "pattern": "^((19|20)\\d{2})?$",
+      "description": "Ano (AAAA) ou vazio"
+    },
+    "series": {
+      "type": "string",
+      "description": "Série/linha (+ ' - subset')"
+    },
+    "col_#": {
+      "type": "string",
+      "description": "Número de colecionador como na wiki"
+    },
+    "toy_#": {
+      "type": "string",
+      "description": "Código Mattel; vários separados por ' / '"
+    },
+    "color": {
+      "type": "string",
+      "description": "Cor da carroceria"
+    },
+    "tampo": {
+      "type": "string",
+      "description": "Decoração"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL da foto no CDN da Fandom ou vazio"
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "casting": {
+      "type": "string",
+      "description": "Título da página do modelo (FK castings_v6.title)"
+    },
+    "product_type": {
+      "enum": [
+        "vehicle",
+        "monster_truck",
+        "trackset",
+        "pack"
+      ]
+    },
+    "series_#": {
+      "type": "string",
+      "description": "Posição na série"
+    },
+    "segment": {
+      "type": "string",
+      "description": "Seção da lista anual"
+    },
+    "pack": {
+      "type": "string",
+      "description": "Packs/pistas, separados por ' | '"
+    },
+    "base": {
+      "type": "string",
+      "description": "Cor/tipo da base"
+    },
+    "window": {
+      "type": "string",
+      "description": "Cor do vidro"
+    },
+    "interior": {
+      "type": "string",
+      "description": "Cor do interior"
+    },
+    "wheel": {
+      "type": "string",
+      "description": "Tipo de roda"
+    },
+    "country": {
+      "type": "string",
+      "description": "País de fabricação"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações"
+    },
+    "subset": {
+      "type": "string",
+      "description": "Subconjunto"
+    },
+    "section": {
+      "type": "string",
+      "description": "Seção da página de origem"
+    },
+    "designer": {
+      "type": "string",
+      "description": "Designer"
+    },
+    "year_raw": {
+      "type": "string",
+      "description": "Ano original quando não era um ano limpo"
+    },
+    "col_num": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "col_total": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "image_file": {
+      "type": "string",
+      "description": "Nome do arquivo de imagem na wiki"
+    },
+    "series_page": {
+      "type": "string",
+      "description": "Página da série linkada"
+    },
+    "source": {
+      "enum": [
+        "casting",
+        "casting_sem_template",
+        "list",
+        "series",
+        "pack",
+        "trackset",
+        "monster_list",
+        "product"
+      ]
+    },
+    "uid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{12}$",
+      "description": "Id interno do build (não estável)"
+    }
+  }
+}

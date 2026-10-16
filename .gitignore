@@ -1,0 +1,19 @@
+# ambiente Python
+.venv/
+__pycache__/
+*.pyc
+
+# dados baixados e gerados (recriados pelo ATUALIZAR_DB.bat)
+dados/
+saida/
+logs/
+*.jsonl
+*.jsonl.gz
+hw_images.json
+hw_redirects.json
+*.db
+
+# versões antigas e ferramentas locais
+_legado/
+scraper/ferramentas/
+LEIA-ME.md

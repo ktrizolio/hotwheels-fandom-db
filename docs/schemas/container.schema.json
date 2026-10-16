@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "containers_v6.schema.json",
+  "title": "Pack/pista/série/lista (containers_v6.jsonl)",
+  "type": "object",
+  "required": [
+    "title",
+    "type",
+    "page_url",
+    "members"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título da página"
+    },
+    "type": {
+      "enum": [
+        "pack",
+        "trackset",
+        "list",
+        "series",
+        "monster_list"
+      ]
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "string",
+            "description": ""
+          },
+          "model_name": {
+            "type": "string",
+            "description": ""
+          },
+          "casting_resolved": {
+            "type": "string",
+            "description": ""
+          },
+          "color": {
+            "type": "string",
+            "description": ""
+          },
+          "toy_#": {
+            "type": "string",
+            "description": ""
+          },
+          "col_#": {
+            "type": "string",
+            "description": ""
+          },
+          "series_#": {
+            "type": "string",
+            "description": ""
+          },
+          "section": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
